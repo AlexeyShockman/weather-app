@@ -12,7 +12,7 @@ function City(state) {
                 {state.state.cities.map((city) => (
                     <button
                         key={city}
-                        onClick={(e) => dispatch(changeCity(e))}
+                        onClick={() => dispatch(changeCity(city))}
                     >
                         {city}</button>
                     ))}
